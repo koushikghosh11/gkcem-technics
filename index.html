@@ -8,7 +8,7 @@
     <meta content="Blueprint: A basic template for a page stack navigation effect" name="description"/>
     <meta content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" name="keywords"/>
     <meta content="koushik" name="author"/>
-    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/demo.css" rel="stylesheet" type="text/css"/>
     <link href="css/component.css" rel="stylesheet" type="text/css"/>
@@ -246,7 +246,7 @@
 <script defer src="js/main.js"></script>
 <script defer>
     // force https connection
-    if (window.location.protocol === 'http:') {
+    if (window.location.hostname !== 'localhost' && window.location.protocol === 'http:') {
 
         console.log("you are accessing us via "
             + "an insecure protocol (HTTP). "
