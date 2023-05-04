@@ -242,8 +242,21 @@
 </div>
 <!-- /pages-stack -->
 <button class="menu-button"><span>Menu</span></button>
-<script src="js/classie.js"></script>
-<script src="js/main.js"></script>
+<script defer src="js/classie.js"></script>
+<script defer src="js/main.js"></script>
+<script defer>
+    // force https connection
+    if (window.location.protocol === 'http:') {
+
+        console.log("you are accessing us via "
+            + "an insecure protocol (HTTP). "
+            + "Redirecting you to HTTPS.");
+
+        window.location.href =
+            window.location.href.replace(
+                'http:', 'https:');
+    }
+</script>
 </body>
 
 </html>
